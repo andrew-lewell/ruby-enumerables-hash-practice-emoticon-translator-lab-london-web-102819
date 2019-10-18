@@ -11,6 +11,7 @@ def load_library(file_path)
     lib[:get_emoticon]["#{emoticon[0]}"] = emoticon[1]
   end
   lib
+  binding.pry
 end
 
 def get_japanese_emoticon(file_path, emoticon)
