@@ -21,8 +21,5 @@ end
 
 def get_english_meaning(file_path, emoticon)
   lib = load_library(file_path)
-  binding.pry
-  japanese = lib[:get_emoticon][emoticon]
-  meaning = lib[:get_meaning][japanese]
-  meaning
+  result = lib[:get_meaning][emoticon]
 end
