@@ -21,5 +21,5 @@ end
 
 def get_english_meaning(file_path, emoticon)
   lib = load_library(file_path)
-  result = lib[:get_meaning][emoticon]
+  result = lib[:get_meaning][emoticon] ? lib[:get_meaning][emoticon] : "Sorry, that emoticon was not found"
 end
